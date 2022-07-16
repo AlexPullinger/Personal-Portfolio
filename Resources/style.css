@@ -26,7 +26,9 @@ header {
    
 }
 
-
+.nav-table {
+    display: none;
+}
 
 .navigation-container {
     list-style: none;
@@ -98,4 +100,54 @@ i {
     padding-left: 20px;
     padding-right: 20px;
     
+}
+
+/* make responsive*/
+
+@media only screen and (max-width: 953px) {
+    .navigation-list {
+        display: none;
+    }
+    .nav-table {
+        display: inline-block;
+        position: fixed;
+        top: 40px;
+        right: 0px;
+        background-color: white;
+    }
+
+    .nav-table-icon{
+        padding: 10px;
+        cursor: pointer;
+    }
+
+
+    .navigation-table-list {
+        display:none;
+        flex-direction: column;
+        position: fixed;
+        top: 10px;
+        right: 0px;
+        z-index: 0;
+        width: 100%;
+        text-align:center;
+        background-color: white;
+    }
+
+    .navigation-table-list .nav-link{
+        margin: 10px;
+    }
+
+    .about-me-container{
+        grid-template-columns: 100%;
+    }
+
+    .about-me-text-container{
+        min-height: 500px;
+    }
+
+    p{
+        padding: 5px;
+    }
+
 }
