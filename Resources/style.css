@@ -102,6 +102,8 @@ i {
     
 }
 
+
+
 /* make responsive*/
 
 @media only screen and (max-width: 953px) {
@@ -111,27 +113,39 @@ i {
     .nav-table {
         display: inline-block;
         position: fixed;
-        top: 40px;
-        right: 0px;
+        top: 0px;
+        right: 10px;
         background-color: white;
     }
 
     .nav-table-icon{
         padding: 10px;
         cursor: pointer;
+        color:#2b6777;
+        border: 1px solid #52ab98;
+        position: fixed;
+        top: 40px;
+        right: 0;
+        z-index: 10;
+        background-color: white;
     }
 
 
-    .navigation-table-list {
-        display:none;
+    #navigation-table-list {
+        display: none;
         flex-direction: column;
         position: fixed;
-        top: 10px;
+        top: 70px;
         right: 0px;
         z-index: 0;
         width: 100%;
         text-align:center;
         background-color: white;
+        margin: 0;
+    }
+
+    .nav-link {
+        margin: 10px 0;
     }
 
     .navigation-table-list .nav-link{
