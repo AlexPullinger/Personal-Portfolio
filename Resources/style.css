@@ -125,7 +125,7 @@ i {
         border: 1px solid #52ab98;
         position: fixed;
         top: 40px;
-        right: 0;
+        right: 10px;
         z-index: 10;
         background-color: white;
     }
