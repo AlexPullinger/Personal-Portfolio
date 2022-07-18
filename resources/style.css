@@ -58,14 +58,14 @@ header {
 
 /* Home styles */
 
-.about-me-container{
+.about-me-container, .contact-me-container{
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     grid-area: main;
 }
 
-.about-me-text-container {
+.about-me-text-container, .contact-me-icons-container {
     background-color: #2b6777;
     height: 100%;
     max-height: 100%;
@@ -131,7 +131,7 @@ figcaption{
     color: white;
 }
 
-.project-flex-container{
+.project-flex-container, .icon-flex-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -155,10 +155,14 @@ figcaption{
 .skills-header{
     color: black;
 }
-.image{
+.image, .contact-icon{
     max-width: 100px;
     height: auto;
     filter:grayscale(100%);
+}
+
+.contact-icon:hover {
+    filter : grayscale(0%);
 }
 /* make responsive*/
 
@@ -208,11 +212,11 @@ figcaption{
         margin: 10px;
     }
 
-    .about-me-container, .projects-container{
+    .about-me-container, .projects-container, .contact-me-container{
         grid-template-columns: 100%;
     }
 
-    .about-me-text-container, .projects-content-container, .skills-container{
+    .about-me-text-container, .projects-content-container, .skills-container, .contact-me-icons-container {
         min-height: 500px;
     }
 
