@@ -208,11 +208,11 @@ figcaption{
         margin: 10px;
     }
 
-    .about-me-container{
+    .about-me-container, .projects-container{
         grid-template-columns: 100%;
     }
 
-    .about-me-text-container{
+    .about-me-text-container, .projects-content-container, .skills-container{
         min-height: 500px;
     }
 
