@@ -224,4 +224,7 @@ figcaption{
         padding: 5px;
     }
 
+    .image, .contact-icon{
+        filter:grayscale(0%);
+    }
 }
